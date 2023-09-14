@@ -16,7 +16,7 @@ void scale(int x, int y) {
       quad(0+x, 0+y, 344+x, 80+y, 276+x, 252+y, 120+x, 304+y);
       int z = (int)(Math.random()*226);
       int u = (int)(Math.random()*226);
-      fill(225, z, u);
+      fill(z, 225, u);
       quad(10+x, 10+y, 344+x, 80+y, 276+x, 252+y, 120+x, 304+y);
       
       
