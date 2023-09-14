@@ -1,11 +1,24 @@
 void setup() {
-  size(500, 500);  //feel free to change the size
-  noLoop(); //stops the draw() function from repeating
+  size(300, 300);
 }
 void draw() {
-  //your code here
+  for (int y = -20; y<=400; y+=20) {
+    for (int x = -10; x<=400; x+=20) {
+      scale(x, y);
+    }
+  }
 }
+
 void scale(int x, int y) {
-  //your code here
+      int r = (int)(Math.random()*226);
+      int g = (int)(Math.random()*226);
+      fill(r, g, 225);
+      quad(0+x, 0+y, 344+x, 80+y, 276+x, 252+y, 120+x, 304+y);
+      int z = (int)(Math.random()*226);
+      int u = (int)(Math.random()*226);
+      fill(z, 225, u);
+      quad(10+x, 10+y, 344+x, 80+y, 276+x, 252+y, 120+x, 304+y);
+      
+      
 }
 
